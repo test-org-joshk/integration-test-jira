@@ -18,7 +18,7 @@ jobs:
         with:
           token: "${{ github.token }}"
           target_url: http://my-cool-app.com
-          environment: .massivelyLong-name-that-may-or-maynot-make-it-through11111111!!!!1!@#$%$#$```**Letkeepgoingsothatitgoesvoer100""""""\/\/\/\/-test
+          environment: x-test
       - name: Running deployment
         run: |
           echo Deploying to production...
