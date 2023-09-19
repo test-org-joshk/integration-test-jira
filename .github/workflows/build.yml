@@ -31,11 +31,11 @@ jobs:
       id: create
       uses: atlassian/gajira-create@v3
       with:
-        project: GA
-        issuetype: Build
-        summary: Build completed for ${{ github.repository }}
-        description: Compare branch
-        fields: '{"customfield_10171": "test"}'
+        project: DEP
+        issuetype: Task
+        summary: CI Failure for 
+        description: Please see full details at https://github.com{{ github.run_id }}
+        fields: '{"labels": ["ExampleLabel"]}'
     
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
