@@ -21,7 +21,7 @@ jobs:
     - name: Jira TODO
       uses: atlassian/gajira-todo@v3
       with:
-        project: e2e
+        project: E2E
         issuetype: Task
         description: Created automatically via GitHub Actions
       env:
@@ -31,7 +31,7 @@ jobs:
       id: create
       uses: atlassian/gajira-create@v3
       with:
-        project: e2e
+        project: E2E
         issuetype: Task
         summary: CI Failure for 
         description: Please see full details at https://github.com{{ github.run_id }}
